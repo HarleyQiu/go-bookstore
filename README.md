@@ -21,13 +21,14 @@ Go 中使用数据库和 Web 服务。
 
 为了保护敏感信息，如数据库连接信息，应将其存放在配置文件中（例如 `config.json`），并通过代码从配置文件中动态读取。
 创建配置文件:
-在项目根目录下创建一个名为`config.json`的文件，并填入以下内容（使用实际的数据库连接信息替换示例内容）：
 
-```json
-{
-  "database": "用户名:密码@tcp(服务器地址:端口)/数据库名?charset=utf8&parseTime=True&loc=Local"
-}
-```
+- 在项目主函数即`main.go`文件所在的目录下创建一个名为`config.json`的文件，并填入以下内容（使用实际的数据库连接信息替换示例内容）：
+
+   ```json
+   {
+      "database": "用户名:密码@tcp(服务器地址:端口)/数据库名?charset=utf8&parseTime=True&loc=Local"
+   }
+   ```
 
 ### 安装方法
 
